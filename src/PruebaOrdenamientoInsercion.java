@@ -12,6 +12,7 @@ class Ordenador{
 				
 				numeros[j+1]=numeros[j];
 				numeros[j]=aux;
+				System.out.println(Arrays.toString(numeros));
 				
 			}//segundo for
 			
@@ -26,8 +27,14 @@ public class PruebaOrdenamientoInsercion {
 	public static void main(String[] args) {
 		
 		int[] numeros = {5,7,11,15,4,12,23,3,4,2,1,45,13};
+		
+		System.out.println("Numeros desordenados: "+Arrays.toString(numeros));
+		
+		System.out.println("==================Inicio ordenamiento===================");
 		Ordenador ord = new Ordenador();//instancia
 		ord.ordenarInsercion(numeros);//llamada al metodo
+		System.out.println("==================Fin ordenamiento===================");
+		
 		System.out.println("Numeros ordenados: "+Arrays.toString(numeros));
 		
 	}
